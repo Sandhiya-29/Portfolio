@@ -2,7 +2,9 @@ import { ArrowDown } from "lucide-react";
 import { portfolioData } from "../data/portfolioData";
 import { DiGithubBadge } from "react-icons/di";
 import { IoLogoLinkedin } from "react-icons/io";
-import heroImage from "../assets/ChatGPT Image Aug 24, 2026, 01_12_56 PM.png";
+import heroImage from "../assets/file_0000000086cc82118206e5d89e9f7d08 (1).png";
+import { FaReact } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa6";
 
 function Hero() {
   return (
@@ -12,13 +14,15 @@ function Hero() {
         <div className="hero-content">
           <p className="hero-small">Hello, I'm</p>
 
-          <h1>{portfolioData.name}</h1>
+          <h2>{portfolioData.name}</h2>
 
           <h2>{portfolioData.role}</h2>
 
-          <p className="hero-description">
-           I build modern, responsive, and user-friendly websites and web applications with clean interfaces and smooth user experiences.
-          </p>
+        <p className="hero-description">
+  I build scalable, responsive, and high-performance web applications,
+  combining intuitive frontend interfaces with robust backend systems,
+  secure APIs, and seamless database integration.
+</p>
 
           <div className="hero-buttons">
             <a href="#projects" className="btn primary-btn">
@@ -54,7 +58,7 @@ function Hero() {
           </div>
 
           <div className="floating-card floating-card-one">
-            <span>⚛</span>
+            <span><FaReact /></span>
             <div>
               <strong>React.js</strong>
               <small>Frontend</small>
@@ -62,10 +66,10 @@ function Hero() {
           </div>
 
           <div className="floating-card floating-card-two">
-            <span>JS</span>
+            <span><FaNodeJs /></span>
             <div>
-              <strong>JavaScript</strong>
-              <small>Developer</small>
+              <strong>Node.js</strong>
+              <small>Backend</small>
             </div>
           </div>
         </div>

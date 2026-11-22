@@ -1,0 +1,186 @@
+
+.experience-section {
+  background: #100b1f;
+  color: #f5f2ff;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.experience-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #b27aff;
+  margin-bottom: 20px;
+}
+
+.experience-heading {
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 0 0 22px;
+  color: #f5f2ff;
+}
+
+.experience-heading span {
+  color: #b27aff;
+}
+
+.experience-intro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #a9a2bb;
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.experience-list {
+  border-top: 1px solid #383047;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 28% 72%;
+  padding: 42px 0;
+  border-bottom: 1px solid #383047;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  padding-left: 8px;
+}
+
+.experience-left {
+  padding-right: 25px;
+}
+
+.experience-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b27aff;
+  margin: 0 0 12px;
+}
+
+.experience-location {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #a9a2bb;
+  margin: 0;
+}
+
+.experience-right {
+  min-width: 0;
+}
+
+.experience-role {
+  font-size: 26px;
+  font-weight: 750;
+  color: #f5f2ff;
+  margin: 0 0 8px;
+}
+
+.experience-company {
+  color: #b27aff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.experience-description {
+  color: #b6aec9;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0 0 24px;
+  max-width: 780px;
+}
+
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c9b5f4;
+  border: 1px solid #403251;
+  background: rgba(178, 122, 255, 0.06);
+  border-radius: 6px;
+  padding: 7px 13px;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(178, 122, 255, 0.16);
+  border-color: #b27aff;
+  color: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .experience-section {
+    padding: 75px 0;
+  }
+
+  .experience-item {
+    grid-template-columns: 32% 68%;
+  }
+
+  .experience-role {
+    font-size: 23px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 60px 0;
+  }
+
+  .experience-container {
+    width: 90%;
+  }
+
+  .experience-heading {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .experience-intro {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 35px 0;
+  }
+
+  .experience-item:hover {
+    padding-left: 0;
+  }
+
+  .experience-role {
+    font-size: 22px;
+  }
+
+  .experience-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .tech-tag {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
